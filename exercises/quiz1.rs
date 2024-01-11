@@ -13,10 +13,15 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+
+const PRICE_PER_APPLE: i32 = 2;
+const PRICE_PER_APPLE_ABOVE_40: i32 = 1;
+
+fn calculate_price_of_apples(amount: i32) -> i32 {
+    amount * if amount > 40 {PRICE_PER_APPLE_ABOVE_40} else {PRICE_PER_APPLE}
+}
 
 // Don't modify this function!
 #[test]
